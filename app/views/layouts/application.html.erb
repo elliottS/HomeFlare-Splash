@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HomeFlareSplash</title>
+  <title>HomeFlare - The simplest way to Search, Share and Show listings.</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<%= render 'shared/header' %>
+
+<!--<%= yield %> -->
+  <!-- Banner Begin -->
+  <div class="call_to_action_wrapper">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>The Simplest Way</br><span class="h2_override">to Search, Share, and Show</span></h2>
+              <h3>HomeFlare is a real-time communication tool</br> for Realtors and Home Buyers</h3>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="call_to_action_buttons_wrapper">
+                <a class="btn btn-large btn-sign-up" href="#">Sign Up</a> <a class="btn btn-large" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span6"><img src="http://lorempixel.com/560/300" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Banner End -->
+
+  <div class="content_spacer"></div>
+
+  <!-- Body Content Begin -->
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="main_content_wrapper">
+          <div class="row-fluid box-shadow">
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Home-buyers</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacus non enim rhoncus facilisis vitae et orci. Cras tincidunt, diam ac suscipit ultrices, risus urna fringilla metus, vitae aliquam arcu risus lacinia risus. Aliquam eu est odio, sed tincidunt lacus. Vestibulum vitae tristique nisl. Ut vitae nisl sit amet velit placerat semper ac at lectus. Curabitur vitae erat sed ligula consectetur adipiscing eget nec lectus. Proin porta dapibus ipsum at interdum.
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Realtors and Brokers</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Realtors and Brokers</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main_content_callout_wrapper">
+            <div class="row-fluid">
+              <div class="span6"></div>
+              <div class="span6"></div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacus non enim rhoncus facilisis vitae et orci. Cras tincidunt, diam ac suscipit ultrices, risus urna fringilla metus, vitae aliquam arcu risus lacinia risus. Aliquam eu est odio, sed tincidunt lacus. Vestibulum vitae tristique nisl. Ut vitae nisl sit amet velit placerat semper ac at lectus. Curabitur vitae erat sed ligula consectetur adipiscing eget nec lectus. Proin porta dapibus ipsum at interdum.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Body Content End -->
+    <div class="row-fluid">
+      <div class="span12">
+        <footer></footer>
+
+      </div>
+    </div>
+  </div>
+
+<%= render 'shared/footer' %>
 
 </body>
 </html>
