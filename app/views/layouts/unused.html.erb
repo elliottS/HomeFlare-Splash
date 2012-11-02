@@ -1,0 +1,347 @@
+<script type="text/javascript">
+
+    $(".features").click(function(){
+      if ($(".container-features").hasClass("activeContent") == true) {} else {
+        $(".container-features").addClass("activeContent");
+        $(".container-newsletter").removeClass("activeContent");
+        $(".container-about").removeClass("activeContent");
+        $(".container-newsletter").addClass("inactiveContent");
+        $(".container-about").addClass("inactiveContent");
+
+        $(".activeContent").css({"z-index": "8"}); 
+        $(".inactiveContent").css({"z-index": "6"}); 
+        $(".inactiveContent").animate({right: "2000px"}, 500);
+    
+        $(".activeContent").animate({right: "0px" }, 500);
+      }
+    });
+    $(".about").click(function(){
+      if ($(".container-about").hasClass("activeContent") == true) {} else {
+        $(".container-about").addClass("activeContent");
+        $(".container-newsletter").removeClass("activeContent");
+        $(".container-features").removeClass("activeContent");
+        $(".container-newsletter").addClass("inactiveContent");
+        $(".container-features").addClass("inactiveContent");
+
+        $(".activeContent").css({"z-index": "8"}); 
+        $(".inactiveContent").css({"z-index": "6"}); 
+        $(".inactiveContent").animate({right: "2000px"}, 500);
+    
+        $(".activeContent").animate({right: "0px" }, 500);
+      }
+    });
+    $(".newsletter").click(function(){
+      if ($(".container-newsletter").hasClass("activeContent") == true) {} else {
+        $(".container-newsletter").addClass("activeContent");
+        $(".container-features").removeClass("activeContent");
+        $(".container-about").removeClass("activeContent");
+        $(".container-features").addClass("inactiveContent");
+        $(".container-about").addClass("inactiveContent");
+
+        $(".activeContent").css({"z-index": "8"}); 
+        $(".inactiveContent").css({"z-index": "6"}); 
+        $(".inactiveContent").animate({right: "2000px"}, 500);
+    
+        $(".activeContent").animate({right: "0px" }, 500);
+      }
+      
+      
+    });
+</script>
+
+<!-- Banner Begin -->
+    <div class="call_to_action_wrapper">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span6">
+            <div class="row-fluid featureBanner">
+              <div class="span12">
+                <h2>The Simplest Way</br><span class="h2_override">to Search, Share, and Show</span></h2>
+                <h3>HomeFlare is a real-time communication tool</br> for Realtors and Home Buyers</h3>
+              </div>
+            </div>
+
+            <div class="row-fluid aboutBanner">
+              <div class="span12">
+                <h2>The Simplest Way</br><span class="h2_override">to Search, Share, and Show</span></h2>
+                <h3>HomeFlare is a real-time communication tool</br> for Realtors and Home Buyers</h3>
+              </div>
+            </div>
+
+            <div class="row-fluid newsletterBanner">
+              <div class="span12">
+                <h2>The Simplest Way</br><span class="h2_override">to Search, Share, and Show</span></h2>
+                <h3>HomeFlare is a real-time communication tool</br> for Realtors and Home Buyers</h3>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="call_to_action_buttons_wrapper">
+                  <!-- <a class="btn btn-large btn-sign-up" href="#">Sign Up</a>  -->
+                  <p style="float:left;">Keep up with HomeFlare</p>
+                  <form>
+                        <div class="input-append">
+                        <input class="span4" placeholder="E-Mail" id="appendedInputButton" type="text">
+                        <button class="btn" type="button">Sign Up</button>
+                        </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="span6"><img src="http://lorempixel.com/560/300" />
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Banner End -->
+  <div class="spacerCont">
+    <div class="content_spacer"></div>
+  </div>
+
+  <!-- Body Content Begin -->
+  <div class="container-features">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="main_content_wrapper">
+          <div class="row-fluid">
+            <div class="span4">
+              <h3 class="featureTitle"><i class="icon-search"></i>A smarter way to search</h3>
+              
+              <div class="content_padding">
+                <p>
+                It pays to know your clients.  Know what your client wants before they do by finding targeted listings in less time by using HomeFlare’s “Smart Search” feature.
+                Smart Searches are integrated with your client’s wish list and eliminate irrelevant listings before you even begin a search.
+                When your client changes their wish list criteria, HomeFlare notifies you that updates have been made to the Smart Search settings.
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <h3 class="featureTitle">A better way to share</h3>
+              <div class="content_padding">
+                <p>
+                Starting the conversation just got easier.
+                Talk to your clients in real-time and share listings in one simple click via the “Flare” button.
+                HomeFlare gives you the power to initiate meaningful conversations with your clients.  Featuring a fluid, streamlined conversation log - now you and your client will always be on the same page. 
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <h3 class="featureTitle">A simpler way to show</h3>
+              <div class="content_padding">
+                <p>
+                Spend less time planning and more time showing.
+
+                HomeFlare provides you with an easy-to-use centralized showing service which eliminates time consuming steps and improves your showing management.
+
+                Easily schedule, confirm and select listings.  Simply choose a date and time, select listings, and invite your client. Custom destinations and notes regarding your showings are also available.
+
+                No need to pick up the phone to contact the listing agent – HomeFlare will automatically contact them on your behalf.  Scheduling negotiations and coordinating showings are no longer a hassle.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main_content_callout_wrapper">
+            <div class="row-fluid">
+              <div class="span6"></div>
+              <div class="span6"></div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacus non enim rhoncus facilisis vitae et orci. Cras tincidunt, diam ac suscipit ultrices, risus urna fringilla metus, vitae aliquam arcu risus lacinia risus. Aliquam eu est odio, sed tincidunt lacus. Vestibulum vitae tristique nisl. Ut vitae nisl sit amet velit placerat semper ac at lectus. Curabitur vitae erat sed ligula consectetur adipiscing eget nec lectus. Proin porta dapibus ipsum at interdum.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <footer></footer>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Body Content End -->
+
+  <!-- Body Content Begin -->
+  <div class="container-newsletter">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="main_content_wrapper">
+          <div class="row-fluid">
+            <div class="span4">
+              <h3 class="featureTitle">Newsletter Page</h3>
+              <div class="content_padding">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacus non enim rhoncus facilisis vitae et orci. Cras tincidunt, diam ac suscipit ultrices, risus urna fringilla metus, vitae aliquam arcu risus lacinia risus. Aliquam eu est odio, sed tincidunt lacus. Vestibulum vitae tristique nisl. Ut vitae nisl sit amet velit placerat semper ac at lectus. Curabitur vitae erat sed ligula consectetur adipiscing eget nec lectus. Proin porta dapibus ipsum at interdum.
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <h3 class="featureTitle">Newsletter Page</h3>
+              <div class="content_padding">
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <h3 class="featureTitle">Newsletter Page</h3>
+              <div class="content_padding">
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main_content_callout_wrapper">
+            <div class="row-fluid">
+              <div class="span6"></div>
+              <div class="span6"></div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacus non enim rhoncus facilisis vitae et orci. Cras tincidunt, diam ac suscipit ultrices, risus urna fringilla metus, vitae aliquam arcu risus lacinia risus. Aliquam eu est odio, sed tincidunt lacus. Vestibulum vitae tristique nisl. Ut vitae nisl sit amet velit placerat semper ac at lectus. Curabitur vitae erat sed ligula consectetur adipiscing eget nec lectus. Proin porta dapibus ipsum at interdum.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <footer></footer>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Body Content End -->
+
+  <!-- Body Content Begin -->
+  <div class="container-about">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="main_content_wrapper">
+          <div class="row-fluid">
+            <div class="span4">
+              <h3 class="featureTitle">About Page</h3>
+              <div class="content_padding">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacus non enim rhoncus facilisis vitae et orci. Cras tincidunt, diam ac suscipit ultrices, risus urna fringilla metus, vitae aliquam arcu risus lacinia risus. Aliquam eu est odio, sed tincidunt lacus. Vestibulum vitae tristique nisl. Ut vitae nisl sit amet velit placerat semper ac at lectus. Curabitur vitae erat sed ligula consectetur adipiscing eget nec lectus. Proin porta dapibus ipsum at interdum.
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <h3 class="featureTitle">About Page</h3>
+              <div class="content_padding">
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+            <div class="span4">
+              <h3 class="featureTitle">About Page</h3>
+              <div class="content_padding">
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main_content_callout_wrapper">
+            <div class="row-fluid">
+              <div class="span6"></div>
+              <div class="span6"></div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacus non enim rhoncus facilisis vitae et orci. Cras tincidunt, diam ac suscipit ultrices, risus urna fringilla metus, vitae aliquam arcu risus lacinia risus. Aliquam eu est odio, sed tincidunt lacus. Vestibulum vitae tristique nisl. Ut vitae nisl sit amet velit placerat semper ac at lectus. Curabitur vitae erat sed ligula consectetur adipiscing eget nec lectus. Proin porta dapibus ipsum at interdum.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+              </p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="content_padding">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                Sed viverra, risus nec tincidunt dignissim, velit elit tempor dolor, vel aliquet libero velit vel metus. In ornare dapibus tempus. Donec mattis, est ut blandit mattis, nibh sapien molestie sem, in mollis enim neque non lacus. Vestibulum rutrum sollicitudin ornare. Sed orci lectus, congue sed consectetur vitae, fermentum vel nibh. Integer risus leo, iaculis vitae scelerisque eu, dignissim eu sem. Donec at laoreet augue. Sed quis vestibulum mauris. Curabitur magna neque, porttitor at ultricies sit amet, molestie at lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <footer></footer>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Body Content End -->
