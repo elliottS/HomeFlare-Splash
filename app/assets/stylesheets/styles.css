@@ -107,33 +107,39 @@
 	margin:0 auto 0;
 	background-color:#A73A37;
 	z-index:10;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.75);
 }
 .nav_icons i {
 	font-size: 50px;
 }
 .searchCont{
+	position:relative;
 	width:50px;
 	height:50px;
 	float:left;
-	border-right:1px solid #666;
+	border-right:1px solid #F5F5F5;
+	border-bottom:4px solid #A73A37;
+	z-index:-1;
 }
 .shareCont{
 	width:50px;
 	height:50px;
 	float:left;
+	border-bottom:4px solid #A73A37;
 }
 .showCont{
 	width:50px;
 	height:50px;
 	float:left;
-	border-left:1px solid #666;
+	border-left:1px solid #F5F5F5;
+	border-bottom:4px solid #A73A37;
 }
 /* Nav End */
 
 /* Introduction Styles */
 .intro_wrapper {
 	margin-top:0px;
-	height:500px;
+
 }
 .realtor{
 	background-color:#000;
@@ -313,7 +319,11 @@ a.connect_to_facebook:active {
 
 
 
-
+.start_convo {
+	text-align:center;
+	font-size:2em;
+	color:#A73A37;
+}
 
 .contact_profile_sub_header {
 	margin: 0 0px 20px 0px;
