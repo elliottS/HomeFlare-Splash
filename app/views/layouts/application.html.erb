@@ -4,7 +4,7 @@
   <title>HomeFlare - The simplest way to Search, Share and Show listings.</title>
   <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' %>
   <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js' %>
-  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic", "application", :media => "all" %>
+  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700|Lato:400,300,700", "application", :media => "all" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -43,6 +43,9 @@
   </div>
 
   <div class="call_to_action_wrapper">
+
+    
+
     <div class="container">
       <div class="row-fluid">
         <div class="span12">
@@ -103,6 +106,7 @@
                     
                     <div class="span12">
                       <div class="row-fluid">
+
                         <div class="span12">
                           <a name="features"></a>
                           <h5 class="start_convo"><a href="#tut_begin">Start the Conversation ⇩</a></h5>
@@ -132,7 +136,9 @@
                         <div class="splash_img"></div>
                       </div>
                       <div class="row-fluid">
-                        <div class="span12">
+
+
+                        <div class="span10">
 
                           <div class="contact_profile_sub_header">Conversation</div>
 
@@ -140,7 +146,14 @@
                       </div>
                       
                       <div class="row-fluid">
-                        <div class="span12">
+                                                <div class="span2">
+                          <div class="tabbable tabs-left navbar-fixed-top">
+                            <ul class="nav nav-tabs affix-top">
+                            <li>option1</li><li>option2</li><li>option3</li>
+                            </ul>
+                          </div> 
+                        </div>
+                        <div class="span10 right_float">
 
                           <div class="contact_profile_conversation_wrapper">
                             <div class="contact_profile_conversation_timestamp">
