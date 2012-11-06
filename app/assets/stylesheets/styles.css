@@ -186,6 +186,14 @@ border:4px solid #a73a37;
 }
 /* Introduction Styles End */
 
+/* Tutorial Styles */
+
+.scroll_trigger {
+	position:fixed;
+	top:20%;
+}
+
+/* Tutorial Styles End */
 /* Shun's Styles v.2 */
 
 body {
