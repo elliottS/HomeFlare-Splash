@@ -63,10 +63,11 @@
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F5F5F5), to(#EBEBEB));
 	background-image: -moz-linear-gradient(19% 75% 90deg,#f5f5f5, #EBEBEB);
 	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
-	- moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
 	position:fixed;
 	z-index:10;
+	overflow:hidden;
 }
 .footerWrapper {
 
@@ -148,6 +149,7 @@ border:4px solid #a73a37;
 
 }
 .pop_out {
+	display:none;
 	position:absolute;
 	top:139px;
 	left:-200px;
@@ -191,6 +193,11 @@ border:4px solid #a73a37;
 .scroll_trigger {
 	position:fixed;
 	top:20%;
+}
+.tabs-left > .nav-tabs > li > a {
+	width:inherit;
+	height:inherit;
+	color:#fff;
 }
 
 /* Tutorial Styles End */
@@ -389,7 +396,11 @@ a.connect_to_facebook:active {
 	border-bottom: solid 1px #959595;
 }
 .contact_profile_conversation_wrapper {
+	background-color:#fafafa;
+	border:1px solid #DBDBDB;
 	overflow: hidden;
+	padding:20px;
+	border-radius:5px;
 }
 .contact_profile_conversation_timestamp {
 	width: 100%;
@@ -542,9 +553,12 @@ a.connect_to_facebook:active {
 .right_float {
 	float:right;
 }
-.intro_chapter {
+.chapter {
 	padding-top:50px;
+	padding-bottom:50px;
 	width:100%;
+	border-bottom:5px solid #A73A37;
+	border-radius:5px;
 }
 .bigWelcome {
 	font-size:6em;
@@ -557,11 +571,44 @@ a.connect_to_facebook:active {
 	text-shadow:1px 1px #5b1715;
 	margin-bottom:50px;
 }
+.tut_header {
+	font-size:4em;
+	background: rgb(167,58,55);
+	background: -moz-linear-gradient(left,  rgba(167,58,55,1) 0%, rgba(91,23,21,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(167,58,55,1)), color-stop(100%,rgba(91,23,21,1)));
+	background: -webkit-linear-gradient(left,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
+	background: -o-linear-gradient(left,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
+	background: linear-gradient(to right,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a73a37', endColorstr='#5b1715',GradientType=1 );
+	border:2px solid #5b1715;
+	color:#fff;
+	text-shadow:2px 2px #5b1715;
+	text-indent:20px;
+	padding:10px;
+	margin-bottom:25px;
+	border-radius:10px;
+}
 .splash_img {
 	height:862px;
 	width:1012px;
 	background:url("homeflaresplash.jpg") no-repeat;
 	margin:0 auto 0;
+}
+.nav-tabs li a {
+
+}
+.add_point {
+	background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom:20px;
+}
+.flare_page {
+	background:url("flares.png");
+	height:479px;
+	width:100%;
+	border:1px solid #999;
 }
 .tutorial {
 	position: relative;
@@ -573,7 +620,7 @@ a.connect_to_facebook:active {
 	margin-left:25px;
 	margin-top:-15px;
 	border-radius:5px;
-
+	box-shadow:2px 2px 5px #666;
 }
 .tutorial h4 {
 	border-bottom: 1px solid #B75F5D;
@@ -604,11 +651,11 @@ a.connect_to_facebook:active {
     left:-40px;
 }
 .rightPos {
-	top:130px;
+	top:210px;
 }
 .intro_one {
 	position:relative;
-	left:0;
+	left:50px;
 	top:150px;
 	max-width:250px;
 }
@@ -620,15 +667,17 @@ a.connect_to_facebook:active {
 }
 .intro_three {
 	position:relative;
-	left:-600px;
+	left:-650px;
 	top:350px;
 	max-width:250px;
+	max-height:250px;
 }
 .intro_four {
 	position:relative;
-	right:-750px;
-	top:250px;
+	right:-200px;
+	top:200px;
 	max-width:250px;
+	max-height:250px;
 }
 .to_top {
 	float:right;
@@ -636,16 +685,44 @@ a.connect_to_facebook:active {
 	font-weight:normal;
 	font-variant:normal;
 }
-.step_1 {
+.step {
 	max-width:500px;
 	max-height:500px;
 }
-
-.step_2 {
-	max-width:500px;
-	max-height:500px;
+.step_flare1 {
+	right:-10px;
+	float:right;
+	max-width:275px;
 }
-
+.step_flare2 {
+	top:300px;
+	right:50px;
+	max-width:150px;
+}
+.step_flare3 {
+	float:right;
+	top:50px;
+	right:-50px;
+	max-width:150px;
+}
+.showings {
+	background:url("showings.png");
+	width:100%;
+	height:609px;
+	border:1px solid #999999;
+}
+.step_showing1 {
+	max-width:350px;
+}
+.step_showing2 {
+	top:100px;
+	left:25px;
+	max-width:200px;
+}
+.step_showing3 {
+	top:200px;
+	max-width:250px;
+}
 
 footer {
 	background-color: #7d7d7d;
