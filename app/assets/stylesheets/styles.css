@@ -69,8 +69,9 @@
 	z-index:10;
 	overflow:hidden;
 }
-.footerWrapper {
-
+.logo_link {
+	width:180px;
+	height:36px;
 }
 .HFlogo {
 	background: url("homeflare_logo.png") no-repeat;
@@ -122,7 +123,8 @@
 background-color:#F5F5F5;
 border:4px solid #a73a37;
 }
-.nav_icons i {
+.searchCont i {
+	color:#a73a37;
 	font-size: 50px;
 }
 .searchCont{
@@ -175,6 +177,9 @@ border:4px solid #a73a37;
 .content_padding p {
 	line-height:18px;
 }
+.content_padding a {
+	color:#a73a37;
+}
 .hook_h3 {
 	text-indent: 10px;
 	font-size:1.25em;
@@ -188,34 +193,27 @@ border:4px solid #a73a37;
 	color:#999;
 
 }
-.btn {
-
-}
 /* Introduction Styles End */
 
 /* Tutorial Styles */
 .nav-tabs {
-	width:200px;
+	width:170px;
 	background-color:#fff;
 	border-radius:10px;
+	box-shadow: -5px 5px 3px -3px #999;
 }
 .scroll_trigger {
-	position:fixed;
 	top:20%;
-
 }
 .tabs-left > .nav-tabs {
-	border:1px solid #666;
+	border:4px solid #a73a37;
 	overflow:hidden;
-}
-.nav-tabs {
-	width:180px;
 }
 .tabs-left > .nav-tabs > li:hover {
 	color:#fff;
 }
 .tabs-left > .nav-tabs > li {
-	width:180px;
+	width:170px;
 	border-left:0px;
     height: 50px;
     padding-left: 0px;
@@ -230,7 +228,7 @@ border:4px solid #a73a37;
     float: left;
     height: 28px;
     overflow:hidden;
-    width:130px;
+    width:120px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
@@ -414,7 +412,7 @@ a.connect_to_facebook:active {
 	border-radius:5px;
 	font-family: "Lato", "Istok Web", Verdana;
 	font-weight:700;
-
+	box-shadow: 0 5px 3px -3px #999999;
 }
 .start_convo button {
 	margin-bottom:25px;
@@ -433,17 +431,21 @@ a.connect_to_facebook:active {
 	padding: 10px 0 7px 0;
 	font-size: 18px;
 	font-weight: bold;
-	border-bottom: solid 1px #959595;
+	border-bottom:4px solid  #a73a37;
 	width:180px;
 }
 .contact_profile_sub_header {
 	margin: 0 0px 20px 0px;
 	padding: 10px 0 7px 0;
-
 	font-size: 18px;
 	font-weight: bold;
-	
-	border-bottom: solid 1px #959595;
+	border-radius:5px;
+	border-bottom:4px solid  #a73a37;
+	box-shadow: 0 5px 3px -3px #999;
+}
+.contact_profile_sub_header p {
+	text-align: center;
+	color:#a73a37;
 }
 .contact_profile_conversation_wrapper {
 	background-color:#fafafa;
@@ -607,37 +609,38 @@ a.connect_to_facebook:active {
 	padding-top:50px;
 	padding-bottom:50px;
 	width:100%;
-	border-bottom:5px solid #A73A37;
 	border-radius:5px;
 }
 .bigWelcome {
 	font-size:6em;
 	color:#a73a37;
-	text-shadow:1px 1px #5b1715;
+	text-shadow:1px 1px #5b1715, 0px 0px 30px #A73A37;
 }
 .smallWelcome{
 	font-size:4em;
 	color:#a73a37;
-	text-shadow:1px 1px #5b1715;
+	text-shadow:1px 1px #5b1715, 0px 0px 30px #A73A37;
 	margin-bottom:50px;
 }
 .tut_header {
 	font-size:4em;
-	background: rgb(167,58,55);
-	background: -moz-linear-gradient(left,  rgba(167,58,55,1) 0%, rgba(91,23,21,1) 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(167,58,55,1)), color-stop(100%,rgba(91,23,21,1)));
-	background: -webkit-linear-gradient(left,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
-	background: -o-linear-gradient(left,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
-	background: -ms-linear-gradient(left,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
-	background: linear-gradient(to right,  rgba(167,58,55,1) 0%,rgba(91,23,21,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a73a37', endColorstr='#5b1715',GradientType=1 );
+	background: rgb(184,96,94);
+	background: -moz-linear-gradient(left,  rgba(184,96,94,1) 0%, rgba(91,23,21,1) 98%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(184,96,94,1)), color-stop(98%,rgba(91,23,21,1)));
+	background: -webkit-linear-gradient(left,  rgba(184,96,94,1) 0%,rgba(91,23,21,1) 98%);
+	background: -o-linear-gradient(left,  rgba(184,96,94,1) 0%,rgba(91,23,21,1) 98%);
+	background: -ms-linear-gradient(left,  rgba(184,96,94,1) 0%,rgba(91,23,21,1) 98%);
+	background: linear-gradient(to right,  rgba(184,96,94,1) 0%,rgba(91,23,21,1) 98%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8605e', endColorstr='#5b1715',GradientType=1 );
 	border:2px solid #5b1715;
 	color:#fff;
+	font-family:"Istok Web", "Lato", Verdana;
 	text-shadow:2px 2px #5b1715;
+	box-shadow: 0px 0px 5px #000;
 	text-indent:20px;
 	padding:10px;
 	margin-bottom:25px;
-	border-radius:10px;
+	border-radius:5px 30px 5px 30px;
 }
 .splash_img {
 	height:862px;
@@ -645,14 +648,15 @@ a.connect_to_facebook:active {
 	background:url("homeflaresplash.jpg") no-repeat;
 	margin:0 auto 0;
 }
-.nav-tabs li a {
-
-}
 .add_point {
 	background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 5px 5px 5px 5px;
     margin-bottom:20px;
+}
+.add_point:hover {
+	border:1px solid #999;
+	box-shadow: inset 0 0 1em #cdcdcd;
 }
 .flare_page {
 	background:url("flares.png");
@@ -665,12 +669,12 @@ a.connect_to_facebook:active {
 	padding:20px;
 	float:left;
 	background-color: rgba(0, 0, 0, .65);
-	border:2px solid #000;	
+	border:1px solid #000;	
 	margin-bottom:50px;
 	margin-left:25px;
 	margin-top:-15px;
 	border-radius:5px;
-	box-shadow:2px 2px 5px #666;
+	box-shadow: inset 0 0 10px #cdcdcd;
 }
 .tutorial h4 {
 	border-bottom: 1px solid #B75F5D;
@@ -701,7 +705,7 @@ a.connect_to_facebook:active {
     left:-40px;
 }
 .rightPos {
-	top:150px;
+	top:140px;
 }
 .intro_one {
 	position:relative;
@@ -773,15 +777,50 @@ a.connect_to_facebook:active {
 	top:200px;
 	max-width:250px;
 }
-
+.realty_pro{
+	float:left;
+	background:url("realtypro.png") no-repeat;
+	margin:0 auto 0;
+	border:1px solid #cdcdcd;
+	width:75px;
+	height:75px;
+	margin-right:20px;
+	margin-bottom:20px;
+}
 footer {
-	background-color: #7d7d7d;
-	height: 200px;
-	margin: 0 0 100px 0;
-	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-	- moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-
+	background-color: #cdcdcd;
+	height:50px;
+	width:100%;
+}
+footer p {
+	color:#aaa;
+	height:30px;
+	padding-top:20px;
+	margin-left:50px;
+}
+.footer_nav {
+	display:inline;
+	height:50px;
+	float:right;
+	width:300px;
+}
+.footer_nav ul {
+	height:50px;
+}
+.footer_nav ul li {
+	height:30px;
+	float:right;
+	color:#999;
+	padding-top:20px;
+	padding-right:20px;
+	padding-left:20px;
+	border-left:1px solid #bebebe;
+}
+.footer_nav ul li a {
+	color:#aaa;
+}
+.footer_nav ul li a:hover {
+	color:#a73a37;
 }
 h2 {
 	letter-spacing: -1px;

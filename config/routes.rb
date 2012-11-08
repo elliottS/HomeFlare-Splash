@@ -1,4 +1,5 @@
 HomeFlareSplash::Application.routes.draw do
+  root :to => 'pages#index'
   resources :blogs
 
   # The priority is based upon order of creation:
