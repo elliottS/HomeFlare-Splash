@@ -9,7 +9,7 @@ $(document).ready(function() {
                         
         $(window).scroll(function(){
                       
-            if ($(window).scrollTop() > 2200 ){
+            if ($(window).scrollTop() > 2245 ){
                           
                 $tab.css({ position:'fixed', top:'11%', left: '207px'});
                 
