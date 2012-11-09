@@ -1,6 +1,19 @@
 
 $(document).ready(function() {
-    $(".pop_out").animate({left:"100px"}, 2000);
+    // $(".pop_out").animate({left:"100px"}, 2000);
+
+    $(".awesome_icon").eq(0).click(function(){
+        $(".client div").css("display", "none");
+        $(".search_cont").css("display", "block");
+    });
+    $(".awesome_icon").eq(1).click(function(){
+        $(".client div").css("display", "none");
+        $(".share_cont").css("display", "block");
+    });
+    $(".awesome_icon").eq(2).click(function(){
+        $(".client div").css("display", "none");
+        $(".show_cont").css("display", "block");
+    });
 
     $(window).bind("resize.browsersize", function() {
                     
