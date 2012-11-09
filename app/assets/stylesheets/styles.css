@@ -214,6 +214,9 @@
 .content_padding a {
 	color:#a73a37;
 }
+.content_padding:hover i{
+	color:#a73a37;
+}
 .intro_hook_h3 {
 	text-indent:10px;
 	font-size:1em;
@@ -234,6 +237,13 @@
 	line-height:18px;
 	color:#999;
 
+}
+.hook_h3 i {
+	font-size:65px;
+	float:right;
+	padding-right:100px;
+	position:relative;
+	bottom:15px;
 }
 .squishy_edge {
 	border-top-left-radius:50px;
