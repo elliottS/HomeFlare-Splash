@@ -202,6 +202,12 @@
 .show_cont {
 	display:none;
 }
+#mce-EMAIL {
+	height:25px;
+}
+#mc-embedded-subscribe {
+	height:30px;
+}
 .content_padding p {
 	line-height:18px;
 }
@@ -237,7 +243,7 @@
 
 /* Table of Contents Styles */
 .nav-tabs {
-	width:170px;
+	width:140px;
 	background-color:#fff;
 	border-radius:10px;
 	box-shadow: -5px 5px 3px -3px #999;
@@ -257,7 +263,7 @@
 	color:#fff;
 }
 .tabs-left > .nav-tabs > li {
-	width:170px;
+	width:140px;
 	border-left:0px;
     height: 50px;
     padding-left: 0px;
@@ -273,8 +279,8 @@
     height: 28px;
     overflow:hidden;
     width:120px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     padding-bottom:10px;
     margin-bottom:0px;
@@ -646,7 +652,6 @@ a.connect_to_facebook:active {
 	height:200px;
 	width:400px;
 	color:#000;
-
 }
 .right_float {
 	float:right;
@@ -774,8 +779,8 @@ a.connect_to_facebook:active {
 }
 .intro_three {
 	position:relative;
-	left:-650px;
-	top:350px;
+	left:-100px;
+	top:250px;
 	max-width:250px;
 	max-height:250px;
 }

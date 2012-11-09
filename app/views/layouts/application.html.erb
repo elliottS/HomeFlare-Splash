@@ -10,9 +10,7 @@
   <%= csrf_meta_tags %>
 </header>
 <body>
-
   <%= render 'shared/header' %>
-
   <div class="nav_icons">
     <div class="searchCont">
       <i class="icon-search awesome_icon"></i>
@@ -24,19 +22,12 @@
       <i class="icon-calendar awesome_icon"></i>
     </div>
   </div>
-
   <div class="intro_wrapper">
 
     <a name="top"> </a>
 
-    <div class="pop_out">
-
-    </div>
-
+    <div class="pop_out"></div>
     <div class="call_to_action_wrapper">
-
-
-
       <div class="container">
         <div class="row-fluid">
           <div class="span12">
@@ -48,8 +39,15 @@
               <h3>HomeFlare is a real-time communication tool</br> for Realtors and Home Buyers</h3>
               <div class="call_to_action_buttons_wrapper">
                 <div class="input-append">
-                  <input class="span4" id="appendedInputButton" placeholder="email" type="text">
-                  <button class="btn btn-sign-up" type="button">Newsletter</button>
+                  <!-- Begin MailChimp Signup Form -->
+                  <div  id="mc_embed_signup">
+                  <form action="http://realtyprotechnologies.us5.list-manage.com/subscribe/post?u=7919bac2f317dd8e648a4df6a&amp;id=c4f646adfa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <input type="email" value="" name="EMAIL" class="email span4" id="mce-EMAIL" placeholder="email" required>
+                    <input type="submit" value="Newsletter" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-sign-up"></form>
+                  </div>
+                  <!--End mc_embed_signup-->
+                  <!-- <input class="span4" id="appendedInputButton" placeholder="email" type="text">
+                  <button class="btn btn-sign-up" type="button">Newsletter</button> -->
                 </div>
                 <!-- <a class="btn btn-large btn-sign-up" href="#">Sign Up</a> <a class="btn btn-large" href="#">Learn More</a> -->
               </div>
@@ -81,13 +79,11 @@
       </div>
     </div>
   </div>
-
   <div class="main_content_wrapper_bg">
     <div class="container">
       <div class="row-fluid">
         <div class="span12">
           <div class="main_content_wrapper squishy_edge">
-
             <div class="row-fluid">
               <div class="span4">
                 <div class="content_padding">
@@ -113,19 +109,16 @@
                     </div> -->
                   </div>
                   <div class="row-fluid">
-
                     <div class="span12">
                       <div class="row-fluid">
-
                         <div class="span12">
                           <a name="features"></a>
-                          
                           <h5 class="start_convo"><a href="#tut_begin"><button class="btn btn-sign-up" type="button">Start the Conversation ⇩</button></a></h5>
 
                           <a name="tut_begin"> </a> 
+
                         </div>
                       </div>
-
                       <div class="chapter">
                         <div class="bigWelcome">Welcome to HomeFlare.</div>
                         <div class="smallWelcome">Get a taste of the future of Real Estate.</div>
@@ -135,7 +128,7 @@
                         </div>
                         <div class="tutorial intro_two">
                           <h4>Logging in for the first time</h4>
-                          <p class="">When you log into your HomeFlare account, you will be greeted with a series of useful recent information that can get you started. When you first create your account, however, you will need to add clients if you are a realtor or if you are a prospective buyer, you will need to link yourself to a real estate agent.</p>
+                          <p class="">When you log into your HomeFlare account, you will be greeted with a series of useful recent information that can get you started. When you first create your account, however, you will need to add clients.</p>
                         </div>
                         <div class="tutorial intro_three">
                           <h4>Recent Activities &amp; Updates</h4>
@@ -178,24 +171,19 @@
                           </div>
                         </div>
                         </div>
-
                         <div class="row-fluid">
                           <div class="span3">
                             <div class="contact_profile_sub_header">
                               <p>Chapters</p>
                             </div>
                           </div>
-
                           <div class="span9">
-
-
                             <div class="contact_profile_sub_header">
                               <p>Conversation</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      
                       <div class="row-fluid">
                         <div class="span3">
                           <div class="tabbable tabs-left">
@@ -211,19 +199,12 @@
                           </div> 
                         </div>
                         <div class="span9">
-
                           <div class="contact_profile_conversation_wrapper">
                             <div class="contact_profile_conversation_timestamp">
                               10/25/2012
                             </div>
-
                             <div class="contact_profile_conversation_bundle_left">
-
-
-
                               <div class="contact_profile_conversation_left">8:00am: <strong>Bob Smith linked you as their realtor</strong></div>
-
-
                               <div class="tutorial">
                                 <div class="step">
                                   <h4>Step 1: Bringing in contacts / clients </h4>
@@ -232,11 +213,8 @@
                                   </p>
                                 </div>
                               </div>
-                              
-
-                              <div class="contact_profile_conversation_left_flare">9:30am: <strong><a href="#">1234 Massachusetts Ave Orlando, FL 32801</a></strong></div>
+                              <div class="contact_profile_conversation_left_flare">9:30am: <strong>1234 Massachusetts Ave Orlando, FL 32801</strong></div>
                             </div>
-                            
                             <div class="contact_profile_conversation_bundle_right">
                               <div class="tutorial">
                                 <div class="step">
@@ -246,63 +224,50 @@
                                   </p>
                                 </div>
                               </div>
-                              <div class="contact_profile_conversation_right_flare"><strong> <a href="#">3 listings</a> </strong> :10:10am</div>
+                              <div class="contact_profile_conversation_right_flare"><strong> 3 listings </strong> :10:10am</div>
                               <div class="tutorial">
                                 <div class="step">
                                   <h4>Listing Posts ( Flares )</h4>
                                   <p>
                                     This is an example of what happens when listings get flared to a client or realtor. There is a specific page just for flares that we will get into in just a moment, but for now know that flares will appear here for easy reference. Clicking these go to the listing page for the flare.
                                   </p>
-                                  
                                 </div>
                               </div>
                             </div>
                             <div class="contact_profile_conversation_bundle_left">
-
                               <div class="contact_profile_conversation_left">8:00am: <strong>"I don't like the idea of living on a busy street"</strong></div>
                             </div>
                             <div class="contact_profile_conversation_bundle_right">
-
                               <div class="contact_profile_conversation_right"><strong>"Okay, how about a cul de sac?" </strong>:10:10am - 10/26/2012</div>
-                              <div class="contact_profile_conversation_right_flare"><strong><a href="#">25 Nautica Mile Drive Winter Garden, FL</a></strong> :10:10am</div>
+                              <div class="contact_profile_conversation_right_flare"><strong>25 Nautica Mile Drive Winter Garden, FL</strong> :10:10am</div>
                             </div>
                             <div class="contact_profile_conversation_bundle_left">
-
                               <div class="contact_profile_conversation_left">8:00am: <strong>"Yes. Can you show me a few more houses like that? Thanks"</strong></div>
                             </div>
                             <div class="contact_profile_conversation_bundle_right">
-
-                              <div class="contact_profile_conversation_right_flare"><strong><a href="#">4 listings</a></strong> :10:10am</div>
-                              <div class="contact_profile_conversation_right_flare"><strong> <a href="#">3 listings</a> </strong> :10:10am</div>
+                              <div class="contact_profile_conversation_right_flare"><strong>4 listings</strong> :10:10am</div>
+                              <div class="contact_profile_conversation_right_flare"><strong> 3 listings </strong> :10:10am</div>
                               <div class="tutorial">
                                 <div class="step">
                                   <h4>Making the right choice</h4>
                                   <p>
                                     The process of sharing listings back and forth may seem familiar. HomeFlare keeps everything organized for you to find properties relevant to a prospective buyer. Once an agreement has been made about houses that fit the clients criteria, HomeFlare also guides you through setting up and organizing showings. 
                                   </p>
-                                  
                                 </div>
                               </div>
                             </div>
-                            
-                            
                             <div class="contact_profile_conversation_bundle_left">
-
                               <div class="contact_profile_conversation_left">3:00pm: <strong>"I don't like the idea of living on a busy street"</strong></div>
                             </div>
                             <div class="contact_profile_conversation_bundle_right">
-
-
                               <div class="contact_profile_conversation_right"><strong>"Okay, how about a cul de sac?" </strong>:10:10am</div>
-                              <div class="contact_profile_conversation_right_flare"><strong><a href="#">25 Nautica Mile Drive Winter Garden, FL</a></strong> :10:10am</div>
+                              <div class="contact_profile_conversation_right_flare"><strong>25 Nautica Mile Drive Winter Garden, FL</strong> :10:10am</div>
                             </div>
                             <div class="contact_profile_conversation_bundle_left">
-
                               <div class="contact_profile_conversation_left">8:00am: <strong>"Yes. Can you show me a few more houses like that? Thanks"</strong></div>
                             </div>
                             <div class="contact_profile_conversation_bundle_right">
-
-                              <div class="contact_profile_conversation_right_flare"><strong><a href="contact_flare.html">4 listings</a></strong> <a id="most_recent">:10:10am</a></div>
+                              <div class="contact_profile_conversation_right_flare"><strong>4 listings</strong> :10:10am</div>
                             </div>
                           </div>
                         </div>
@@ -312,7 +277,6 @@
                   <!-- End Conversation Tutorial Page -->
                   <div class="contact_profile_sub_header"></div>
                 </div>
-
                 <div class="row-fluid">
                   <div class="span2"></div>
                   <div class="span10">
