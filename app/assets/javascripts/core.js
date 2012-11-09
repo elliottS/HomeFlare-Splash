@@ -18,14 +18,20 @@ $(document).ready(function() {
     $(window).bind("resize.browsersize", function() {
                     
         var $tab = $('.nav-tabs');
-            windowHalf = $(window).height() / 2;
+            
                         
         $(window).scroll(function(){
                       
-            if ($(window).scrollTop() > 2245 ){
-                          
-                $tab.css({ position:'fixed', top:'11%', left: '207px'});
-                
+            if ($(window).scrollTop() > 2300 ){
+
+                var windowWidth = $(window).width();
+                if (windowWidth > 1350) {          
+                    $tab.css({ position:'fixed', top:'11%', left: '20.25%'});
+                } else if (windowWidth > 1000) {
+                    $tab.css({ position:'fixed', top:'11%', left: '8%'});
+                } else {
+                    $tab.css({ position:'fixed', top:'11%', left: '0%'});
+                }
                               
             }  else {
                 $tab.css({ position:'relative', top:'0', left: '0' });   
