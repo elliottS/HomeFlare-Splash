@@ -4,7 +4,7 @@ class ContactMailer < ActionMailer::Base
 	def new_contact(contact)
 		@contact = contact
 
-		mail(to: "elliott@realtypromobile.com",
+		mail(to: "tony@realtypromobile.com",
          subject: "New Contact: #{contact[:first_name]} #{contact[:last_name]}")
 	end
 end

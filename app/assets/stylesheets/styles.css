@@ -1,5 +1,5 @@
-/* Style Sheet for HomeFlare - by RealtyPro Technologies
-	last updated: 10-31-12 
+/*  Style Sheet for HomeFlare App -  RealtyPro Technologies
+	last updated: 11-13-12 
 	authors: Elliott Smiggen, Shun Shiga 
 */
 
@@ -79,9 +79,6 @@
 	width:180px;
 	height:36px;
 }
-.nav {
-
-}
 .nav li {
 	float:left;
 	height:25px;
@@ -95,7 +92,6 @@
 	color:#666;
 	height:25px;
 	width:100%;
-
 }
 .nav li:hover {
 	color:#fff;
