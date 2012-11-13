@@ -16,9 +16,14 @@ $(document).ready(function() {
     });
 
     $(window).bind("resize.browsersize", function() {               
-        var $tab = $('.nav-tabs');       
+        var $tab = $('.nav-tabs');    
+
         $(window).scroll(function(){      
             if ($(window).scrollTop() > 2300 ){     //Big resolution monitors
+
+                $(".nav-tabs li").eq(1).css( 'background-color', "#A73A37");  
+                $(".nav-tabs li a").eq(0).css( 'color', "#fff");  
+
                 var windowWidth = $(window).width();
                 if (windowWidth > 1350) {           //Medium resolution monitors
                     $tab.css({ position:'fixed', top:'11%', left: '20.25%'});
@@ -26,8 +31,11 @@ $(document).ready(function() {
                     $tab.css({ position:'fixed', top:'11%', left: '8%'});
                 } else {
                     $tab.css({ position:'fixed', top:'11%', left: '0%'});
-                }            
-            }  else {
+                }          
+            }  else if ($(window).scrollTop() > 3000 ){
+                $(".nav-tabs li").eq(1).css( 'background-color', "#A73A37");  
+                $(".nav-tabs li a").eq(0).css( 'color', "#fff");
+            } else {
                 $tab.css({ position:'relative', top:'0', left: '0' });   
             }
         });             
