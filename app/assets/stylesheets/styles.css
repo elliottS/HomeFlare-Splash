@@ -301,6 +301,13 @@
 .tabs-left > .nav-tabs > li > a:hover {
 	border:none;
 }
+.activeChapter {
+	background-color:#a73a37;
+}
+.activeChapter > a {
+	color:#fff !important;
+}
+
 /* End Table of Contents Styles End */
 
 
@@ -465,7 +472,7 @@ a.connect_to_facebook:active {
 	display: block;
 }
 
-/* Converastion Page Styles */
+/* Conversation Page Styles */
 
 .start_convo {
 	text-align:center;
@@ -484,7 +491,6 @@ a.connect_to_facebook:active {
 	color:#cdcdcd;
 	letter-spacing:1px;
 }
-
 .start_convo a:hover {
 	color:#c3504d;
 	text-decoration: none;
@@ -494,7 +500,7 @@ a.connect_to_facebook:active {
 	padding: 10px 0 7px 0;
 	font-size: 18px;
 	font-weight: bold;
-	border-bottom:4px solid  #a73a37;
+	border-bottom:4px solid #a73a37;
 	width:180px;
 }
 .contact_profile_sub_header {
@@ -560,27 +566,20 @@ a.connect_to_facebook:active {
 	-moz-border-radius-bottomleft: 10px;
 	border-bottom-left-radius: 10px;
 	-webkit-box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
-	- moz-box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
 	box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
-
 }
 .contact_profile_conversation_left a {
-
 	color: #a73a37;
-
 }
 .contact_profile_conversation_right a:hover {
 	color: #a73a37;
-
 }
 .contact_profile_conversation_right a {
-
 	color: #a73a37;
-
 }
 .contact_profile_conversation_left a:hover {
 	color: #a73a37;
-
 }
 .contact_profile_conversation_left_flare {
 	width: 75%;
@@ -600,7 +599,7 @@ a.connect_to_facebook:active {
 	-moz-border-radius-bottomleft: 10px;
 	border-bottom-left-radius: 10px;
 	-webkit-box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
-	- moz-box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
 	box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 .contact_profile_conversation_right_flare {
