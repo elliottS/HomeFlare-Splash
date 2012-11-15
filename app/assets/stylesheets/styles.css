@@ -369,7 +369,7 @@ h3 {
 	color: #808080;
 	text-align: center;
 	line-height: 15px;
-	letter-spacing: -1px;
+	letter-spacing: -.5px;
 	text-shadow:1px 1px 0px #fff, 0px 0px 5px #cdcdcd;
 }
 .call_to_action_buttons_wrapper {
