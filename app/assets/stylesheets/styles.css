@@ -80,25 +80,25 @@
 	height:36px;
 }
 .nav li {
-	float:left;
+	
 	height:25px;
+	float:left;
+}
+.nav li a {
 	text-align:center;
+	color:#666;
+	height:25px;
 	padding-top:15px;
 	padding-left:20px;
 	padding-right:20px;
 	border-left:1px solid #ccc;
-}
-.nav li a {
-	color:#666;
-	height:25px;
-	width:100%;
 }
 .nav li:hover {
 	color:#fff;
 	background-color:#A73A37;
 	cursor:pointer;
 }
-.about {
+.about a {
 	border-right:1px solid #ccc;
 }
 .nav li:hover a{
@@ -364,16 +364,14 @@ h3 {
 	text-shadow:1px 1px 0px #ccc;
 	border-bottom:4px solid #a73a37;
 	border-radius:0px 0px 5px 5px;
-
 }
 .call_to_action_wrapper h3 {
-	color: #999;
+	color: #808080;
 	text-align: center;
 	line-height: 15px;
 	letter-spacing: -1px;
-	text-shadow:1px 1px 0px #fff;
+	text-shadow:1px 1px 0px #fff, 0px 0px 5px #cdcdcd;
 }
-
 .call_to_action_buttons_wrapper {
 	text-align: center;
 	margin-top:30px;
@@ -708,6 +706,9 @@ a.connect_to_facebook:active {
 .splash_img {
 	height:862px;
 	width:1012px;
+	position:relative;
+	right:30px;
+	z-index:1;
 	background:url("homeflaresplash.jpg") no-repeat;
 	margin:0 auto 0;
 }
@@ -738,6 +739,7 @@ a.connect_to_facebook:active {
 	margin-top:-15px;
 	border-radius:5px;
 	box-shadow: inset 0 0 10px #cdcdcd;
+	z-index:2;
 }
 .tutorial:hover {
 	background-color:rgba(0, 0, 0, .95);
@@ -779,7 +781,7 @@ a.connect_to_facebook:active {
 }
 .intro_one {
 	position:relative;
-	left:50px;
+	left:-30px;
 	top:150px;
 	max-width:250px;
 }
@@ -791,7 +793,7 @@ a.connect_to_facebook:active {
 }
 .intro_three {
 	position:relative;
-	left:-100px;
+	left:-120px;
 	top:250px;
 	max-width:250px;
 	max-height:250px;

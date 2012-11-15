@@ -54,7 +54,7 @@ $(document).ready(function() {
                         $(".nav-tabs li").removeClass("activeChapter");
                         $(".nav-tabs li").eq(6).addClass("activeChapter");
                     }
-                    if ($(window).scrollTop() > 7400 ) {
+                    if ($(window).scrollTop() > 7300 ) {
                         $(".nav-tabs li").removeClass("activeChapter");
                         $(".nav-tabs li").eq(7).addClass("activeChapter");
                     }
