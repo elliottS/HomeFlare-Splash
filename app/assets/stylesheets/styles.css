@@ -336,7 +336,7 @@ h3 {
 	position: relative;
 	top:-6px;
 	padding: 60px 0 100px 0;
-	background: url("bg/house_bg2.jpg") no-repeat 0px -100px ;
+	background: url("bg/house_bg2.jpg") no-repeat center ;
 }
 .call_to_action_wrapper img {
 	padding: 5px;
@@ -675,15 +675,15 @@ a.connect_to_facebook:active {
 	border-radius:5px;
 }
 .bigWelcome {
-	font-size:6em;
-	color:#a73a37;
-	text-shadow:1px 1px #5b1715, 0px 0px 30px #A73A37;
+	font-size:1.35em;
+	color:#fff;
+	text-shadow:1px 1px #5b1715;
 }
 .smallWelcome{
-	font-size:3.6em;
-	color:#a73a37;
-	text-shadow:1px 1px #5b1715, 0px 0px 30px #A73A37;
-	margin-bottom:50px;
+	font-size:.75em;
+	color:#fff;
+	text-shadow:1px 1px #5b1715;
+
 }
 .tut_header {
 	font-size:4em;
