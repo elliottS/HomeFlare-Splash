@@ -3,22 +3,20 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @blogs }
-    end
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.json { render json: @blogs }
+    # end
   end
-
   # GET /blogs/1
   # GET /blogs/1.json
   def show
     @blog = Blog.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @blog }
-    end
+    # respond_to do |format|
+    #   format.html # show.html.erb
+    #   format.json { render json: @blog }
+    # end
   end
 
   # GET /blogs/new
@@ -26,10 +24,10 @@ class BlogsController < ApplicationController
   def new
     @blog = Blog.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @blog }
-    end
+    # respond_to do |format|
+    #   format.html # new.html.erb
+    #   format.json { render json: @blog }
+    # end
   end
 
   # GET /blogs/1/edit
@@ -50,7 +48,7 @@ class BlogsController < ApplicationController
         format.html { render action: "new" }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
-    end
+     end
   end
 
   # PUT /blogs/1
