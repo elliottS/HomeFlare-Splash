@@ -863,12 +863,18 @@ a.connect_to_facebook:active {
 /* End Tutorial Styles */
 
 /* Begin Blog Styles */
+.blog_head {
+	color:#000;
+	margin-top:50px;
+	position:relative;
+	float:left;
+	height:20px;
+}
 .all_blogs {
 	position:relative;
 	margin:50px auto 0;
-	height:1000px;
 	width:100%;
-	background-color:#cdcdcd;
+	background-color:#fff;
 }
 
 /* End Blog Styles */

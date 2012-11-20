@@ -1,31 +1,31 @@
 <div class="row-fluid">
   <div class="container">
     <div class="span12">
-      <h1>Listing blogs</h1>
-       
-      <table class="all_blogs">
-        <tr>
-          <th>Published</th>
-          <th>Author</th>
-          <th>Content</th>
-          <th>Title</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
+      
+      <div class="container">
+        <h1>Listing blogs</h1>
+        <ul class="blog_head">
+         
 
-      <% @blogs.each do |blog| %>
-        <tr>
-          <td><%= blog.published %></td>
-          <td><%= blog.author %></td>
-          <td><%= blog.content %></td>
-          <td><%= blog.title %></td>
-          <td><%= link_to 'Show', blog %></td>
-          <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-          <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-      </table>
+            <li>Published</li>
+            <li>Author</li>
+            <li>Content</li>
+            <li>Title</li>
+        </ul>
+      </div>
+      <div class="container">
+        <ul class="all_blogs">
+        <% @blogs.each do |blog| %>
+            <li><%= blog.published %></td>
+            <li><%= blog.author %></td>
+            <li><%= blog.content %></td>
+            <li><%= blog.title %></td>
+            <li><%= link_to 'Show', blog %></td>
+            <li><%= link_to 'Edit', edit_blog_path(blog) %></td>
+            <li><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+        </ul>
+      </div>
       <%= link_to 'New Blog', new_blog_path %>
     </div>
   </div>

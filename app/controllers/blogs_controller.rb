@@ -12,7 +12,6 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     @blog = Blog.find(params[:id])
-
     # respond_to do |format|
     #   format.html # show.html.erb
     #   format.json { render json: @blog }
@@ -23,7 +22,6 @@ class BlogsController < ApplicationController
   # GET /blogs/new.json
   def new
     @blog = Blog.new
-
     # respond_to do |format|
     #   format.html # new.html.erb
     #   format.json { render json: @blog }
